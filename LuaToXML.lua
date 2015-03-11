@@ -68,8 +68,3 @@ end
 function XmlBuilder:toString(obj)
   return self.registries[obj] and self.serialize(obj, self.registries[obj], '')
 end
-
---local xml = XmlBuilder()
---对lua table使用xml.register(obj, 'name')，注册对象
---调用xml.toString(obj)把对象以及注册的子对象，以及属性转换为Xml
-
